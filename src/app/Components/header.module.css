@@ -1,0 +1,24 @@
+.header {
+  padding: 1rem;
+  background-color: #c7c4c5;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover{
+  cursor: pointer;
+  color: #851c53
+}
+
+
+
+
