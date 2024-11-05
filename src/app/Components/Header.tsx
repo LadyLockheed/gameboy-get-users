@@ -6,6 +6,9 @@ const Header = () => {
     <header className={styles.header}>
       <nav>
         <ul className={styles.links}>
+        <li>
+            <Link href="/" className={styles.link}>Home</Link>
+          </li>
           <li>
             <Link href="/gameboy" className={styles.link}>Gameboy</Link>
           </li>
