@@ -1,0 +1,32 @@
+.gameButtonsContainer {
+  transform: rotate(-20deg); 
+  margin-top: .5rem;
+}
+
+.gameButtons {
+  width: 5.2rem;
+  height: 2.2rem;
+  background-color: #851c53;
+  border-radius: 10px;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+@media (width >= 800px) {
+  .gameButtons {
+    width: 8rem;
+    height: 3rem;
+  }
+}
+
+.gameButtons:hover{
+  background-color: #b92573;
+}
+
+.gameButtons:disabled {
+  background-color: #85576f;
+}
+
+.getUserText {
+  margin-left: 0.5rem;
+}
