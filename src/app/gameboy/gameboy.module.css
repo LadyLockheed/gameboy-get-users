@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   margin-top: 3rem;
-  border: 1px solid red;
 }
 
 .shell {
@@ -12,9 +11,8 @@
   border-radius: 10px 10px 90px 10px;
   background-color: #c7c4c5;
   padding: .5rem;
-  /* display: grid;
-  grid-template-columns: repeat(5, minmax(20%, 1fr));
-  grid-template-rows: repeat(8, minmax(20%, 1fr));  */
+  display: flex;
+  flex-direction: column;
 }
 
 @media (width >= 800px) {
@@ -22,6 +20,22 @@
     height: 53rem;
     width: 33rem;
     border-radius: 10px 10px 110px 10px;
+    padding: 1rem;
+
+  }
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 0rem 1rem;
+}
+
+@media (width >= 800px) {
+  .buttonRow {
+    margin-top: 5rem;
 
   }
 }
