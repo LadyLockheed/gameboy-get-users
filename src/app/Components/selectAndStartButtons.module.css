@@ -1,0 +1,43 @@
+.buttonsContainer {
+  display:flex;
+  align-self: center;
+  margin-top: 3rem;
+}
+
+.aboutButton, .turnOffButton {
+  height: 1rem;
+  width: 3rem;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+@media (width >= 800px) {
+  .aboutButton, .turnOffButton {
+    height: 1.5rem;
+    width: 5rem;
+  }
+}
+
+.aboutButton:hover, .turnOffButton:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.turnOffContainer, .aboutContainer { 
+
+  transform: rotate(-20deg);
+
+}
+
+.turnOffContainer {
+
+}
+
+.aboutContainer {
+
+}
+
+.turnOffText, .aboutText {
+  margin-left: 0.5rem;
+  font-size: .6rem;
+}
