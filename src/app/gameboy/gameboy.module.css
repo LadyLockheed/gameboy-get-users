@@ -1,0 +1,27 @@
+.gameboyContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  border: 1px solid red;
+}
+
+.shell {
+  height: 30rem;
+  width: 19rem;
+  border: 5px solid grey;
+  border-radius: 10px 10px 90px 10px;
+  background-color: #c7c4c5;
+  padding: .5rem;
+  /* display: grid;
+  grid-template-columns: repeat(5, minmax(20%, 1fr));
+  grid-template-rows: repeat(8, minmax(20%, 1fr));  */
+}
+
+@media (width >= 800px) {
+  .shell {
+    height: 53rem;
+    width: 33rem;
+    border-radius: 10px 10px 110px 10px;
+
+  }
+}
