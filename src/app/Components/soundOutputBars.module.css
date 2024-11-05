@@ -1,0 +1,29 @@
+.container {
+  height: 3.5rem;
+  width: 5.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transform: rotate(-20deg);
+  align-self: flex-end;
+  margin-right: 1.2rem;
+  margin-top: 1.5rem;
+
+}
+
+@media (width >= 800px) {
+  .container {
+    height: 5.5rem;
+    width: 10rem;
+    margin-right: 1rem;
+    margin-top: 8.5rem;
+  }
+}
+
+.bar {
+  border: 2px solid black;
+  width: 0.7rem;
+  height: 100%;
+  border-radius: 5px;
+  background-color: darkgrey;
+}
