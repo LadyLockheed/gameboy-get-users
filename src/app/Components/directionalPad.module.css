@@ -21,6 +21,7 @@
 }
 
 @media (width >= 800px) {
+  
   .horizontal {
     top: 1.7rem;
     width: 5rem;

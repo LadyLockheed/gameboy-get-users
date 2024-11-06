@@ -36,7 +36,7 @@ const Gameboy = () => {
     catch (error) {
       setHasError(true);
     //console.log for developing process only.
-    //For build remove console.log
+    //For build, remove console.log
       console.log(error)
     } 
     finally {

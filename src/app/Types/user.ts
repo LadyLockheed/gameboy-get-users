@@ -1,5 +1,5 @@
 //The homepage for the user-api does not provide an interface for expected data
-//This is therefore not a complete interface for everything available in the data
+//This is therefore not a complete interface for everything available in the data structure
 //To save time I only selected some properties
  
 export interface User {

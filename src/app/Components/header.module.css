@@ -10,6 +10,8 @@
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
+  list-style-type: none;
+
 }
 
 .link {
@@ -24,7 +26,8 @@
     font-size: 1.6rem;
   }
 }
-.active{
+
+.activeLink {
   border-bottom: 2px solid #851c53;
 }
 

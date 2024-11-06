@@ -11,8 +11,8 @@ const currentPath = usePathname()
     <header className={styles.header}>
       <nav>
         <ul className={styles.links}>
-        <li>
-            <Link href="/" className={`${styles.link} ${currentPath === '/' && styles.active}`}>Home</Link>
+          <li>
+            <Link href="/" className={`${styles.link} ${currentPath === '/' && styles.activeLink}`}>Home</Link>
           </li>
           <li>
             <Link href="/gameboy" className={`${styles.link} ${currentPath === '/gameboy' && styles.active}`}>Gameboy</Link>
@@ -22,7 +22,6 @@ const currentPath = usePathname()
           </li>
         </ul>
       </nav>
-
     </header>
   )
 }

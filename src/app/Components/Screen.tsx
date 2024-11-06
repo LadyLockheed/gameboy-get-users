@@ -16,7 +16,9 @@ const OffScreen = (props: OffScreenProps) => {
   const {isLoading, users, hasError, isOn} = props
   const screenClassName = `${styles.screen} ${isOn ? styles.isOn : styles.isOff} ${users.length !== 0 ? styles.scrollbar : ""}`;
   const hasUser = users?.length> 0;
+
   const userData = users?.map((u, index) => {
+
     return (
       <div key={index}>
         <p>
@@ -68,12 +70,15 @@ const OffScreen = (props: OffScreenProps) => {
   });
 
   const content = () => {
+
     if (!isOn) {
       return <h3 className={styles.header}>Click &quot;On&quot; to start Gameboy</h3>
     }
+
     if (isLoading) {
       return <Spinner/>
     }
+
     if (hasError) {
       return (
         <h3 className={styles.header}>
@@ -81,6 +86,7 @@ const OffScreen = (props: OffScreenProps) => {
         </h3>
       );
     }
+
     if (hasUser) {
       return (
         <div className={styles.userTextContainer}>
@@ -89,9 +95,10 @@ const OffScreen = (props: OffScreenProps) => {
         </div>
       );
     }
+
     return (
       <>
-        <h1 className={styles.header}>Welcome person</h1>
+        <h1 className={styles.header}>Welcome</h1>
         <h3 className={styles.header}>Lets find you a random user</h3>
       </>
     );
