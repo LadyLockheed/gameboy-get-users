@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+
+.notfoundContainer {
+  font-family: "Changa", sans-serif;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.notfoundContainer > h1 {
+  margin-bottom: 1rem;
+}
+
+.link{
+  font-size: 1.5rem;
+  color: purple;
+  padding: .5rem;
+  margin-top: 1rem;
+}
