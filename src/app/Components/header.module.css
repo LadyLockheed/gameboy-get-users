@@ -8,12 +8,15 @@
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
-
 }
 
 .link {
   text-decoration: none;
   color: black;
+
+}
+.active{
+  border-bottom: 2px solid #851c53;
 }
 
 .link:hover{
