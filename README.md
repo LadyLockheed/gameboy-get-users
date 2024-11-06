@@ -24,7 +24,7 @@ and decided to use it since it was easy to grasp how it worked and how I could t
 to copy paste code without knowing what it does. 
 
 
-## TODO:S
+## TODO:s
 I wanted to organize all the fonts and colors into a single file using CSS variables for better structure. However, by the time I realized I was reusing many fonts and colors, I had already invested significant time into the app and needed to scope a bit.
 
 Tests:
