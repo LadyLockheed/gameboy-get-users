@@ -1,0 +1,38 @@
+.buttonsContainer {
+  display:flex;
+  align-self: center;
+  margin-top: 3rem;
+}
+
+.onButton, .offButton {
+  height: 1rem;
+  width: 3rem;
+  border-radius: 5px;
+  border: 3px solid black;
+  transform: rotate(-20deg);
+  background-color: grey;
+}
+
+@media (width >= 800px) {
+  .onButton, .offButton {
+    height: 1.5rem;
+    width: 5rem;
+  }
+}
+
+.onButton:hover, .offButton:hover {
+  cursor: pointer;
+  background-color: rgb(100, 100, 100);
+}
+
+.text {
+  margin-left: 0.5rem;
+  font-size: .6rem;
+  transform: rotate(-20deg);
+}
+
+@media (width >= 800px) {
+  .text {
+    font-size: 1rem;
+  }
+}
