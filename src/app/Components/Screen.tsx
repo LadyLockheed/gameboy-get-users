@@ -1,4 +1,4 @@
-import styles from './offScreen.module.css'
+import styles from './screen.module.css'
 import { User } from '../Types/user'
 
 

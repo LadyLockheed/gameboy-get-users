@@ -1,6 +1,6 @@
 'use client'
 import styles from './gameboy.module.css'
-import OffScreen  from '../Components/OffScreen'
+import Screen  from '../Components/Screen'
 import GameButtons from '../Components/GameButtons'
 import DirectionalPad from '../Components/DirectionalPad'
 import SoundOutputBars from '../Components/SoundOutputBars'
@@ -44,7 +44,7 @@ const Gameboy = () => {
   return (
     <div className={styles.gameboyContainer}>
       <div className={styles.shell}>
-        <OffScreen isLoading={isLoading} users={users} hasError={hasError} isOn={isOn}/>
+        <Screen isLoading={isLoading} users={users} hasError={hasError} isOn={isOn}/>
         <div className={styles.buttonRow}>
           <DirectionalPad/>
           <GameButtons onClick={fetchUser} isLoading={isLoading} isOn={isOn}/>
