@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+
+.aboutContainer {
+  text-align: center;
+  padding: 3rem;
+}
+
+.aboutContainer > h3 {
+  font-family: "Aldrich", sans-serif;
+  margin-bottom: 2rem;
+}
+.aboutContainer > p {
+  font-family: "Changa", sans-serif;
+}
