@@ -17,6 +17,46 @@
 .screen {
   height: 100%;
   width:100%;
-  background-color: #616b39;
   border: 3px solid black;
+  padding: 0.5rem;
+
+}
+
+.isOn {
+  background-color: #a3b361;
+  box-shadow: 0 0 1rem #a3b361;
+  border: 3px solid rgba(0, 0, 0, 0.445);
+}
+
+.isOff {
+  background-color: #616b39;
+}
+
+.scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #ff000033 #ffa50057
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+.userTextContainer {
+    text-align: left;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.userTextContainer > p {
+    line-height: 1.2rem;
+}
+
+.userTextContainer > h3 {
+    margin-bottom: 1rem;
+}
+
+.header {
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 0.7rem;
 }
