@@ -1,5 +1,6 @@
 import styles from './screen.module.css'
 import { User } from '../Types/user'
+import Spinner from './Spinner';
 
 
 interface OffScreenProps {
@@ -71,7 +72,7 @@ const OffScreen = (props: OffScreenProps) => {
       return <h3>Click Start to start Gameboy</h3>
     }
     if (isLoading) {
-      return <h3 className={styles.header}>Get user...</h3>;
+      return <Spinner/>
     }
     if (hasError) {
       return (
