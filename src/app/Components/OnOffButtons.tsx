@@ -2,11 +2,12 @@ import styles from './onOffButtons.module.css'
 
 interface OnOffButtonsProps {
   setIsOn: React.Dispatch<React.SetStateAction<boolean>>
+  handleTurnOff: ()=> void;
 }
 
 const OnOffButtons = (props: OnOffButtonsProps) => {
 
-  const {setIsOn } = props;
+  const {setIsOn, handleTurnOff } = props;
   
   return (
     <div className={styles.buttonsContainer}>
@@ -21,7 +22,7 @@ const OnOffButtons = (props: OnOffButtonsProps) => {
 
       <div>
         <button
-          onClick={()=> setIsOn(false)}
+          onClick={()=> handleTurnOff()}
           className={styles.offButton}
         />
         <h5 className={styles.text}>OFF</h5>

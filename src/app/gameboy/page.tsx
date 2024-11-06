@@ -5,7 +5,7 @@ import GameButtons from '../Components/GameButtons'
 import DirectionalPad from '../Components/DirectionalPad'
 import SoundOutputBars from '../Components/SoundOutputBars'
 import OnOffButtons from '../Components/OnOffButtons'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import axios from "axios";
 import { User } from '../Types/user'
 
@@ -16,17 +16,15 @@ const Gameboy = () => {
   const [hasError, setHasError] = useState<boolean>(false);
   const [isOn, setIsOn] = useState<boolean>(false)
 
-  useEffect(()=> {
-    //Empty user array when "turn off" gameboy
-    if(!isOn && users.length !== 0) {
-      setUsers([])
-    }
-
-  },[isOn, users.length])
+  const handleTurnOff = ():void => {
+    setUsers([])
+    setIsOn(false)
+  }
 
   const fetchUser = async () => {
     setIsLoading(true);
 
+    //If error from earlier fetch, clear. 
     if (hasError) {
       setHasError(false);
     }
@@ -34,13 +32,18 @@ const Gameboy = () => {
     try {
       const response = await axios.get("https://randomuser.me/api/");
       setUsers(response.data.results);
-    } catch (error) {
+    } 
+    catch (error) {
       setHasError(true);
+    //console.log for developing process only.
+    //For build remove console.log
       console.log(error)
-    } finally {
+    } 
+    finally {
       setIsLoading(false);
     }
   };
+
   return (
     <div className={styles.gameboyContainer}>
       <div className={styles.shell}>
@@ -49,7 +52,7 @@ const Gameboy = () => {
           <DirectionalPad/>
           <GameButtons onClick={fetchUser} isLoading={isLoading} isOn={isOn}/>
         </div>
-          <OnOffButtons setIsOn={setIsOn}/>
+          <OnOffButtons setIsOn={setIsOn} handleTurnOff={handleTurnOff}/>
           <SoundOutputBars/>
       </div>
     
