@@ -19,6 +19,10 @@ I chose to use regular CSS even though I know you use MUI. This decision was int
 
 I also took the chance to build a responsive, mobile-first app. This is something I did not get much experience with in previous jobs, so I wanted to practice it as well.
 
+I can honestly not take any credit for the spinner. I found it online, 
+and decided to use it since it was easy to grasp how it worked and how I could tinker with it if I wanted to, and I do not want
+to copy paste code without knowing what it does. 
+
 
 ## TODO:S
 I wanted to organize all the fonts and colors into a single file using CSS variables for better structure. However, by the time I realized I was reusing many fonts and colors, I had already invested significant time into the app and needed to scope a bit.
