@@ -69,7 +69,7 @@ const OffScreen = (props: OffScreenProps) => {
 
   const content = () => {
     if (!isOn) {
-      return <h3>Click Start to start Gameboy</h3>
+      return <h3 className={styles.header}>Click &quot;On&quot; to start Gameboy</h3>
     }
     if (isLoading) {
       return <Spinner/>
