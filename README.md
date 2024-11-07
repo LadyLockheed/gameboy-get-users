@@ -25,6 +25,10 @@ to copy paste code without knowing what it does.
 
 
 ## TODO:s
+
+Errors on console: 
+I have a "The resource <URL> was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally." - error in console. I did not solve this before sending in the test. I tried to read up on it but it took too long time to try to solve it and it does not break the ui, so I left it for now. However, this will be my main priority when going forward with this project.
+
 Organization: I wanted to organize all the fonts and colors into a single file using CSS variables for better structure. However, by the time I realized I was reusing many fonts and colors, I had already invested significant time into the app and needed to scope a bit.
 
 Tests:
