@@ -15,10 +15,10 @@ const currentPath = usePathname()
             <Link href="/" className={`${styles.link} ${currentPath === '/' && styles.activeLink}`}>Home</Link>
           </li>
           <li>
-            <Link href="/gameboy" className={`${styles.link} ${currentPath === '/gameboy' && styles.active}`}>Gameboy</Link>
+            <Link href="/gameboy" className={`${styles.link} ${currentPath === '/gameboy' && styles.activeLink}`}>Gameboy</Link>
           </li>
           <li>
-            <Link href="/about" className={`${styles.link} ${currentPath === '/about' && styles.active}`}>About</Link>
+            <Link href="/about" className={`${styles.link} ${currentPath === '/about' && styles.activeLink}`}>About</Link>
           </li>
         </ul>
       </nav>
