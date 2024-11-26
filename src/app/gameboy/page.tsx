@@ -10,13 +10,14 @@ import axios from 'axios';
 import { User } from '../types/user';
 
 const Gameboy = () => {
-	const [users, setUsers] = useState<User[] | []>([]);
+	const [user, setUser] = useState<User | null>(null);
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [hasError, setHasError] = useState<boolean>(false);
 	const [isOn, setIsOn] = useState<boolean>(false);
 	const handleTurnOff = (): void => {
-		setUsers([]);
+		setUser(null);
 		setIsOn(false);
+		setHasError(false);
 	};
 
 	const fetchUser = async () => {
@@ -29,7 +30,7 @@ const Gameboy = () => {
 
 		try {
 			const response = await axios.get('https://randomuser.me/api/');
-			setUsers(response.data.results);
+			setUser(response.data.results[0]);
 		} catch (error) {
 			if (error instanceof Error) {
 			}
@@ -47,7 +48,7 @@ const Gameboy = () => {
 			<div className={styles.shell}>
 				<Screen
 					isLoading={isLoading}
-					users={users}
+					user={user}
 					hasError={hasError}
 					isOn={isOn}
 				/>
