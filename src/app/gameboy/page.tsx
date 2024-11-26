@@ -1,13 +1,13 @@
 'use client';
 import styles from './gameboy.module.css';
-import Screen from '../Components/Screen';
-import GameButtons from '../Components/GameButtons';
-import DirectionalPad from '../Components/DirectionalPad';
-import SoundOutputBars from '../Components/SoundOutputBars';
-import OnOffButtons from '../Components/OnOffButtons';
+import Screen from '../components/Screen';
+import GameButtons from '../components/GameButtons';
+import DirectionalPad from '../components/DirectionalPad';
+import SoundOutputBars from '../components/SoundOutputBars';
+import OnOffButtons from '../components/OnOffButtons';
 import { useState } from 'react';
 import axios from 'axios';
-import { User } from '../Types/user';
+import { User } from '../types/user';
 
 const Gameboy = () => {
 	const [users, setUsers] = useState<User[] | []>([]);
