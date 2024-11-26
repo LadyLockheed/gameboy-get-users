@@ -2,14 +2,14 @@ import styles from './screen.module.css';
 import { User } from '../Types/user';
 import Spinner from './Spinner';
 
-interface OffScreenProps {
+interface ScreenProps {
 	isLoading: boolean;
 	users: User[];
 	hasError: boolean;
 	isOn: boolean;
 }
 
-const OffScreen = (props: OffScreenProps) => {
+const Screen = (props: ScreenProps) => {
 	const { isLoading, users, hasError, isOn } = props;
 
 	const screenClassName = `${styles.screen} ${
@@ -119,4 +119,4 @@ const OffScreen = (props: OffScreenProps) => {
 		</div>
 	);
 };
-export default OffScreen;
+export default Screen;
