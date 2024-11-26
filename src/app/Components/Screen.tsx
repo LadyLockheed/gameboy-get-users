@@ -1,5 +1,5 @@
 import styles from './screen.module.css';
-import { User } from '../Types/user';
+import { User } from '../types/user';
 import Spinner from './Spinner';
 
 interface ScreenProps {
@@ -108,14 +108,6 @@ const Screen = (props: ScreenProps) => {
 	return (
 		<div className={styles.outerFrame}>
 			<div className={screenClassName}>{content()}</div>
-			<button
-				className="test"
-				id="test"
-				onClick={() => console.log('click')}
-				disabled={false}
-			>
-				Click
-			</button>
 		</div>
 	);
 };
