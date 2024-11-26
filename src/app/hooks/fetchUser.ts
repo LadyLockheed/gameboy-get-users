@@ -7,7 +7,7 @@ interface UseFetchUserResult {
 	isLoading: boolean;
 	hasError: boolean;
 	fetchUser: () => Promise<void>;
-	removeUser: () => void;
+	clearUserState: () => void;
 }
 
 const useFetchUser = (): UseFetchUserResult => {
@@ -33,14 +33,14 @@ const useFetchUser = (): UseFetchUserResult => {
 		}
 	};
 
-	const removeUser = (): void => {
+	const clearUserState = (): void => {
 		setUser(null);
 		if (hasError) {
 			setHasError(false);
 		}
 	};
 
-	return { user, isLoading, hasError, fetchUser, removeUser };
+	return { user, isLoading, hasError, fetchUser, clearUserState };
 };
 
 export default useFetchUser;

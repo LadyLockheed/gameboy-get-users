@@ -10,9 +10,10 @@ import useFetchUser from '../hooks/fetchUser';
 
 const Gameboy = () => {
 	const [isOn, setIsOn] = useState<boolean>(false);
-	const { user, isLoading, hasError, fetchUser, removeUser } = useFetchUser();
+	const { user, isLoading, hasError, fetchUser, clearUserState } =
+		useFetchUser();
 	const handleTurnOff = (): void => {
-		removeUser();
+		clearUserState();
 		setIsOn(false);
 	};
 
