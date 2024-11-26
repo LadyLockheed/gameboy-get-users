@@ -1,5 +1,5 @@
 import { User } from '../types/user';
-import UserDetail from './UserDetail';
+import styles from './userDetails.module.css';
 
 interface UserDetailsProps {
 	user: User;
@@ -24,7 +24,10 @@ const UserDetails = (props: UserDetailsProps) => {
 	return (
 		<div>
 			{details.map((detail, index) => (
-				<UserDetail key={index} headline={detail.headline} info={detail.info} />
+				<p key={index}>
+					<span className={styles.boldText}>{`${detail.headline}: `} </span>
+					{detail.info}
+				</p>
 			))}
 		</div>
 	);
