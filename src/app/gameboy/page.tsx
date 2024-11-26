@@ -6,41 +6,14 @@ import DirectionalPad from '../components/DirectionalPad';
 import SoundOutputBars from '../components/SoundOutputBars';
 import OnOffButtons from '../components/OnOffButtons';
 import { useState } from 'react';
-import axios from 'axios';
-import { User } from '../types/user';
+import useFetchUser from '../hooks/fetchUser';
 
 const Gameboy = () => {
-	const [user, setUser] = useState<User | null>(null);
-	const [isLoading, setIsLoading] = useState<boolean>(false);
-	const [hasError, setHasError] = useState<boolean>(false);
 	const [isOn, setIsOn] = useState<boolean>(false);
+	const { user, isLoading, hasError, fetchUser, removeUser } = useFetchUser();
 	const handleTurnOff = (): void => {
-		setUser(null);
+		removeUser();
 		setIsOn(false);
-		setHasError(false);
-	};
-
-	const fetchUser = async () => {
-		setIsLoading(true);
-
-		//If error from earlier fetch, clear.
-		if (hasError) {
-			setHasError(false);
-		}
-
-		try {
-			const response = await axios.get('https://randomuser.me/api/');
-			setUser(response.data.results[0]);
-		} catch (error) {
-			if (error instanceof Error) {
-			}
-			setHasError(true);
-			//console.log for developing process only.
-			//For build, remove console.log
-			console.log(error);
-		} finally {
-			setIsLoading(false);
-		}
 	};
 
 	return (
