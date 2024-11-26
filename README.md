@@ -17,7 +17,7 @@ _"Feel free to put extra effort into the areas you enjoy working with and want t
 
 I focused mainly on style in this coding test. Since I had a limited amount of time to complete the test I had to make some priorities to what include and what to exclude. Below follow some thoughs about the code in general and also what should be included in the app but is left out due to the time limit.
 
-## Thoughts:
+## Thoughts
 
 For this project, I used React, Next.js, TypeScript, and regular CSS. I wanted to become more familiar with Next.js. I have only worked with it briefly before but found it really interesting and wanted to explore it further. I used Next.js-specific features such as layouts, pages, routing, and handling of the "not found" page.
 
