@@ -11,47 +11,47 @@ const UserDetails = (props: UserDetailsProps) => {
 	return (
 		<div>
 			<p>
-				<span className={styles.bold}>Title: </span>
+				<span className={styles.boldText}>Title: </span>
 				{name.title}
 			</p>
 			<p>
-				<span className={styles.bold}>Firstname: </span>
+				<span className={styles.boldText}>Firstname: </span>
 				{name.first}
 			</p>
 			<p>
-				<span className={styles.bold}>Lastname: </span>
+				<span className={styles.boldText}>Lastname: </span>
 				{name.last}
 			</p>
 			<p>
-				<span className={styles.bold}>Gender: </span>
+				<span className={styles.boldText}>Gender: </span>
 				{gender}
 			</p>
 			<p>
-				<span className={styles.bold}>Street: </span>
+				<span className={styles.boldText}>Street: </span>
 				{location.street.name}
 			</p>
 			<p>
-				<span className={styles.bold}>City: </span>
+				<span className={styles.boldText}>City: </span>
 				{location.city}
 			</p>
 			<p>
-				<span className={styles.bold}>Country: </span>
+				<span className={styles.boldText}>Country: </span>
 				{location.country}
 			</p>
 			<p>
-				<span className={styles.bold}>Phone: </span>
+				<span className={styles.boldText}>Phone: </span>
 				{phone}
 			</p>
 			<p>
-				<span className={styles.bold}>Email: </span>
+				<span className={styles.boldText}>Email: </span>
 				{email}
 			</p>
 			<p>
-				<span className={styles.bold}>Cell: </span>
+				<span className={styles.boldText}>Cell: </span>
 				{cell}
 			</p>
 			<p>
-				<span className={styles.bold}>Nationality: </span>
+				<span className={styles.boldText}>Nationality: </span>
 				{nat}
 			</p>
 		</div>
