@@ -1,35 +1,35 @@
 .container {
-  position: relative;
+	position: relative;
 }
 
-.horizontal, .vertical {
-  position: absolute;
-  border-radius: 3px;
-  background-color: black;
+.horizontal,
+.vertical {
+	position: absolute;
+	border-radius: 3px;
+	background-color: black;
 }
 
 .horizontal {
-  top: 1.2rem;
-  width: 3.6rem;
-  height: 1.3rem;
+	top: 1.2rem;
+	width: 3.6rem;
+	height: 1.3rem;
 }
 
 .vertical {
-  left: 1.2rem;
-  height: 3.6rem;
-  width: 1.3rem;
+	left: 1.2rem;
+	height: 3.6rem;
+	width: 1.3rem;
 }
 
 @media (width >= 800px) {
-  
-  .horizontal {
-    top: 1.7rem;
-    width: 5rem;
-    height: 1.7rem;
-  }
-  .vertical {
-    left: 1.7rem;
-    height: 5rem;
-    width: 1.7rem;
-  }
+	.horizontal {
+		top: 1.7rem;
+		width: 5rem;
+		height: 1.7rem;
+	}
+	.vertical {
+		left: 1.7rem;
+		height: 5rem;
+		width: 1.7rem;
+	}
 }

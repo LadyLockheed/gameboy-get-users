@@ -1,39 +1,39 @@
 .gameButtonsContainer {
-  transform: rotate(-20deg); 
-  margin-top: .5rem;
+	transform: rotate(-20deg);
+	margin-top: 0.5rem;
 }
 
 .gameButtons {
-  width: 5.2rem;
-  height: 2.2rem;
-  background-color: #851c53;
-  border-radius: 10px;
-  border: 3px solid black;
-  cursor: pointer;
+	width: 5.2rem;
+	height: 2.2rem;
+	background-color: #851c53;
+	border-radius: 10px;
+	border: 3px solid black;
+	cursor: pointer;
 }
 
-@media (width >= 800px) {
-  .gameButtons {
-    width: 8rem;
-    height: 3rem;
-  }
+@media (width >=800px) {
+	.gameButtons {
+		width: 8rem;
+		height: 3rem;
+	}
 }
 
-.gameButtons:hover{
-  background-color: #b92573;
+.gameButtons:hover {
+	background-color: #b92573;
 }
 
 .gameButtons:disabled {
-  background-color: #85576f;
+	background-color: #85576f;
 }
 
 .getUserText {
-  margin-left: 0.5rem;
-  font-size: 0.6rem;
+	margin-left: 0.5rem;
+	font-size: 0.6rem;
 }
 
-@media (width >= 800px) {
-  .getUserText {
-  font-size: 1rem;
-  }
+@media (width >=800px) {
+	.getUserText {
+		font-size: 1rem;
+	}
 }

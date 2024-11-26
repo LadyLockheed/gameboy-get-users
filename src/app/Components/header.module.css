@@ -1,41 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
 
 .header {
-  padding: 1rem;
-  background-color: #c7c4c5;
+	padding: 1rem;
+	background-color: #c7c4c5;
 }
 
 .links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 2rem;
-  list-style-type: none;
-
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 2rem;
+	list-style-type: none;
 }
 
 .link {
-  text-decoration: none;
-  color: black;
-  font-family: "Changa", sans-serif;
-  font-size: 1.2rem;
+	text-decoration: none;
+	color: black;
+	font-family: 'Changa', sans-serif;
+	font-size: 1.2rem;
 }
 
-@media (width >= 800px) {
-  .link {
-    font-size: 1.6rem;
-  }
+@media (width >=800px) {
+	.link {
+		font-size: 1.6rem;
+	}
 }
 
 .activeLink {
-  border-bottom: 2px solid #851c53;
+	border-bottom: 2px solid #851c53;
 }
 
-.link:hover{
-  cursor: pointer;
-  color: #851c53
+.link:hover {
+	cursor: pointer;
+	color: #851c53;
 }
-
-
-
-

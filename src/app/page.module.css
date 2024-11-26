@@ -2,21 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
 
 .introText {
-  font-family: "Aldrich", sans-serif;
-  text-align: center;
-  padding: 3rem;
+	font-family: 'Aldrich', sans-serif;
+	text-align: center;
+	padding: 3rem;
 }
 
 .introText > h1 {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 .introText > h2 {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .introText > p {
-  font-family: "Changa", sans-serif;
+	font-family: 'Changa', sans-serif;
 }
-
-
-
